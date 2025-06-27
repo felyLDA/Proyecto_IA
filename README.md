@@ -1,2 +1,2 @@
 # Proyecto_IA
-Proyecto IA 
+Matín Reyes y Felipe Cabezas
