@@ -36,6 +36,7 @@ métricas vistas en clase:
 -MAE (Mean Absolute Error)
 -RMSE (Root Mean Squared Error)
 -R² (coeficiente de determinación)
+<<<<<<< HEAD
 
 
 Ventajas:
@@ -55,3 +56,5 @@ Pertinencia:
 Estos modelos son adecuados para una primera aproximación al problema, ya que combinan buena capacidad predictiva con facilidad de implementación e interpretación.
 
 Además, fueron revisados en clase y permiten reforzar conceptos clave como overfitting, importancia de atributos y evaluación de modelos de regresión, alineándose con los objetivos pedagógicos del proyecto.
+=======
+>>>>>>> 05eb32449d8776da8246277dcdc2df6846f07eba
