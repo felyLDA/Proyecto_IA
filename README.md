@@ -36,7 +36,6 @@ métricas vistas en clase:
 -MAE (Mean Absolute Error)
 -RMSE (Root Mean Squared Error)
 -R² (coeficiente de determinación)
-<<<<<<< HEAD
 
 
 Ventajas:
