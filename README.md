@@ -56,3 +56,15 @@ Estos modelos son adecuados para una primera aproximación al problema, ya que c
 
 Además, fueron revisados en clase y permiten reforzar conceptos clave como overfitting, importancia de atributos y evaluación de modelos de regresión, alineándose con los objetivos pedagógicos del proyecto.
 
+
+Al comenzar, cargamos los datos y realizamos cierta limpieza en ellos, eliminando características irrelevantes como nombres, fechas de nacimiento y datos contractuales que no aportaban valor predictivo, también hicimos matrices de correlación solo para que ver que tan relacionados estaban ciertas caracteristicas. 
+
+Luego de eso, partimos de lleno con el entrenamiento, en donde conjunto de datos se preparó separando las características predictoras (X) de la variable objetivo 'potential' (y), dividiéndose en grupos de entrenamiento (80%) y prueba (20%). Las variables se estandarizaron mediante StandardScaler para normalizar sus escalas, y como se mencionó anteriormente, se implementaron dos modelos predictivos: un Árbol de Decisión (con profundidad máxima de 5) y un Random Forest (con 100 estimadores), ambos configurados con random_state=42 para reproducibilidad. Los modelos se entrenaron con los datos estandarizados y se evaluaron mediante las métricas clave mencionadas (RMSE, MAE y R²) en el conjunto de prueba, permitiendo comparar objetivamente su rendimiento en la predicción del potencial de los jugadores
+
+Los modelos demostraron una capacidad predictiva significativa para estimar el potencial de jugadores. El Random Forest superó claramente al Árbol de Decisión, con un MAE 53% más preciso y un R² de 0.963, indicando que explica el 96% de la variabilidad en los datos. Las gráficas de predicción vs valores reales muestran una alta correlación, aunque se observan ligeras subestimaciones en jugadores de alto potencial (>85 puntos). El análisis de importancia de características reveló que atributos técnicos como ball_control y dribbling son los principales predictores, alineándose con el conocimiento experto en fútbol. Estos resultados validan la utilidad del modelo para aplicaciones prácticas como scouting y valoración de jugadores, aunque se recomienda ajustar el modelo para reducir el sesgo en predicciones de alto rango. Los detalles completos del análisis exploratorio, implementación y métricas están disponibles en el notebook adjunto.
+
+A partir del análisis realizado, se logró construir modelos predictivos que permiten estimar con buena precisión el potencial futuro de jugadores de fútbol en base a sus atributos actuales. El modelo de Random Forest destacó por su capacidad de generalización y su robustez frente a datos ruidosos, superando al árbol de decisión individual en métricas clave como MAE, RMSE y R². Además, se pudo identificar qué características influyen más en el desarrollo proyectado de un jugador, lo cual entrega información valiosa para procesos de scouting o evaluación de talento.
+
+
+
+
