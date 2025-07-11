@@ -36,3 +36,23 @@ métricas vistas en clase:
 -MAE (Mean Absolute Error)
 -RMSE (Root Mean Squared Error)
 -R² (coeficiente de determinación)
+
+
+Ventajas:
+
+Ambos modelos (árbol y bosque aleatorio) funcionan bien con datasets tabulares como el presente.
+Soportan relaciones no lineales entre variables.
+No requieren escalamiento de variables ni normalización.
+Son robustos frente a outliers y datos faltantes (especialmente Random Forest).
+Permiten conocer la importancia relativa de cada atributo para la predicción.
+
+Limitaciones:
+
+Los árboles de decisión individuales tienden a sobreajustar, especialmente si no se limita su profundidad.
+Random Forest, aunque más preciso, puede ser menos interpretable que un solo árbol.
+Ambos modelos pueden ser menos efectivos si hay muchas variables irrelevantes o ruidosas (requieren una buena selección de características).
+Pertinencia:
+Estos modelos son adecuados para una primera aproximación al problema, ya que combinan buena capacidad predictiva con facilidad de implementación e interpretación.
+
+Además, fueron revisados en clase y permiten reforzar conceptos clave como overfitting, importancia de atributos y evaluación de modelos de regresión, alineándose con los objetivos pedagógicos del proyecto.
+
